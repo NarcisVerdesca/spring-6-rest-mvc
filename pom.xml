@@ -24,6 +24,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
         </dependency>
         <dependency>
@@ -50,12 +54,6 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-devtools -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-        </dependency>
-
     </dependencies>
 
     <build>
@@ -72,20 +70,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-
-<!--            Riassunto-->
-<!--            In sintesi, questa configurazione serve a:-->
-
-<!--            -Compilare il codice sorgente utilizzando Java 21.-->
-<!--            -->
-<!--            -Configurare gli annotation processors per MapStruct e Lombok, e un binding tra loro.-->
-<!--            -->
-<!--            -Impostare i mapper generati da MapStruct per essere gestiti come bean Spring, migliorando -->
-<!--            l'integrazione con il framework Spring.-->
-<!--            -->
-<!--            Questo setup è utile per progetti che utilizzano queste tecnologie per semplificare il mapping-->
-<!--            degli oggetti e ridurre il codice boilerplate, migliorando al contempo l'integrazione con il framework Spring.-->
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
